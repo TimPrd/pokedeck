@@ -1,7 +1,5 @@
 package upmc.pcg.game.Player;
 
-import upmc.pcg.game.Player.LecturePseudo;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;

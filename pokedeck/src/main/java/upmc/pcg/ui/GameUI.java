@@ -25,15 +25,18 @@ import java.util.Scanner;
 
 public class GameUI
 {
-    private static Scanner keyboardChoice = new Scanner(System.in);
+    private static final Scanner keyboardChoice = new Scanner(System.in);
     private final Game game = new Game();
     private final Scanner console = new Scanner(System.in);
 
+    /**
+     * @return the EnergyType chosen
+     */
     private static EnergyType setPokemonAndEnergyTypeInput()
     {
         EnergyType energyType = null;
         System.out.println("Available Types: ");
-        System.out.println("Please select a cooresponding number for class.");
+        System.out.println("Please select a corresponding number for class.");
         int i = 1;
         for (EnergyType value : EnergyType.values())
         {
@@ -48,6 +51,9 @@ public class GameUI
         return energyType;
     }
 
+    /**
+     * @return the type of trainer chosen
+     */
     private static TrainerType setTrainerTypeInput()
     {
         TrainerType trainerType = null;
@@ -64,6 +70,9 @@ public class GameUI
         return trainerType;
     }
 
+    /**
+     * @return the Card's type chosen
+     */
     public static int chooseTypeOfCard()
     {
         System.out.println("+ (1) Pokémon");
@@ -72,30 +81,42 @@ public class GameUI
         return keyboardChoice.nextInt();
     }
 
+    /**
+     * Show the main menu
+     * @return the choice
+     */
     public static String showMenu()
     {
         System.out.println("-------------------");
-        System.out.println("(1) - AJOUTER UNE CARTE");
-        System.out.println("(2) - SUPPRIMER UNE CARTE");
-        System.out.println("(3) - MODIFIER UNE CARTE");
-        System.out.println("(4) - CONSULTER COLLECTION");
-        System.out.println("(5) - RECHERCHER");
+        System.out.println("(1) - ADD A CARD");
+        System.out.println("(2) - REMOVE A CARD");
+        System.out.println("(3) - UPDATE A CARD");
+        System.out.println("(4) - SHOW THE COLLECTION");
+        System.out.println("(5) - SEARCH");
         System.out.println("-------------------");
-        System.out.println("(C) - Choisir deck");
-        System.out.println("(A) - Ajouter au deck");
-        System.out.println("(X) - Show deck");
+        System.out.println("(C) - CHANGING PLAYER");
+        System.out.println("(A) - ADD TO DECK ");
+        System.out.println("(X) - SHOW DECK");
         System.out.println("-------------------");
-
 
         return keyboardChoice.nextLine();
     }
 
+    /**
+     * Choose from the collection the card the user want
+     * @param collection the player's collection
+     * @return the card's id
+     */
     public static int chooseCardFromCollection(Collection collection)
     {
         System.out.println("Please select the pokemons numbers you want. (beetween 1 and " + collection.getAlCardsCollection().size() + ")");
         return keyboardChoice.nextInt();
     }
 
+    /**
+     * It's the method to choose all the cards we want in our deck
+     * @return the string with all the card's id, separated by a dash
+     */
     public static String chooseCardsFromCollection()
     {
         System.out.println("Please select the pokemons you want. By their number and separated by a - (a dash).");
@@ -104,6 +125,9 @@ public class GameUI
         return keyboardChoice.nextLine();
     }
 
+    /**
+     * @return the query the user wants (witch word to search for)
+     */
     public static String getQueryFindChoice()
     {
         System.out.println("Please, enter the entity you want to search.");
@@ -111,6 +135,10 @@ public class GameUI
 
     }
 
+    /**
+     * @return the query the use wants (with type to search for)
+     * NAME or TYPE of Card
+     */
     public static String getQueryTypeChoice()
     {
         System.out.println("Please, enter the type you want to search for.");
@@ -121,21 +149,21 @@ public class GameUI
         do
         {
             if (choice == 1)
-            {
                 return "NAME";
-            } else
+            else
             {
                 if (choice == 2)
-                {
                     return "TYPE";
-                } else System.out.println("Wrong choice");
+                else System.out.println("Wrong choice");
             }
-
         }
         while (choice >= 1 && choice <= 2);
         return ",";
     }
 
+    /**
+     * @return the data chosen by the user to create a pokemon card
+     */
     public static ArrayList<Object> inputAttributesPkmn()
     {
         ArrayList alData = new ArrayList();
@@ -152,11 +180,11 @@ public class GameUI
         String[] attacks = new String[3];
         while (i < 3 && !stopped)
         {
-            System.out.print("Ajouter attaque " + (i + 1) + " : ");
+            System.out.print("Add attack " + (i + 1) + " : ");
             attacks[i] = keyboardChoice.next();
             System.out.flush();
             i++;
-            System.out.print("Ajouter une autre attaque ? (Y/N)");
+            System.out.print("Add another attack ? (Y/N)");
             String stop = keyboardChoice.next();
             System.out.flush();
             if (stop.equals("N") || stop.equals("n")) stopped = true;
@@ -165,7 +193,7 @@ public class GameUI
 
         alData.add(attacks);
 
-        System.out.print("Entez health points :");
+        System.out.print("Enter health points :");
 
         alData.add(keyboardChoice.nextInt());
         System.out.flush();
@@ -173,6 +201,9 @@ public class GameUI
         return alData;
     }
 
+    /**
+     * @return the data chosen by the user to create a trainer card
+     */
     public static ArrayList<Object> inputAttributesTrain()
     {
         ArrayList alData = new ArrayList();
@@ -191,6 +222,9 @@ public class GameUI
         return alData;
     }
 
+    /**
+     * * @return the data chosen by the user to create a Energy card
+     */
     public static ArrayList<Object> inputAttributesEner()
     {
         ArrayList alData = new ArrayList();
@@ -205,6 +239,9 @@ public class GameUI
         return alData;
     }
 
+    /**
+     * start the game (call the model part)
+     */
     public void start()
     {
         ArrayList<String> names = ask_players_names();
@@ -213,6 +250,9 @@ public class GameUI
 
     }
 
+    /**
+     * @return the names of the players
+     */
     private ArrayList<String> ask_players_names()
     {
         MenuPseudo menuPseudo = new MenuPseudo();

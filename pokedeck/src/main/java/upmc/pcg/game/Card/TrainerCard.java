@@ -14,9 +14,16 @@ public class TrainerCard extends Card
     private TrainerType trainerType;
     private String cardTitle;
 
-
-    public TrainerCard(String cardTitle, int idCard, TrainerType trainerType, String description) {
-        super(cardTitle, CardType.Trainer , idCard);
+    /**
+     * Constructor in order to create an instantiated TrainerCard
+     * @param cardTitle the card's title/name
+     * @param idCard id of the card
+     * @param trainerType trainer type (stadium, trainer..)
+     * @param description description of the card (effect of it)
+     */
+    private TrainerCard(String cardTitle, int idCard, TrainerType trainerType, String description)
+    {
+        super(cardTitle, CardType.Trainer, idCard);
         this.trainerType = trainerType;
         this.cardTitle = cardTitle;
         this.description = description;
@@ -27,35 +34,29 @@ public class TrainerCard extends Card
 
     }
 
-    /**
-     * Get the trainer type of the card
-     * @return TrainerType of card
-     */
-    public TrainerType getTrainerType() {
-        return trainerType;
-    }
 
-    /**
-     * Set the trainer type of the card
-     * @param trainerType TrainerType Enum
-     */
-    public void setTrainerType(TrainerType trainerType) {
-        this.trainerType = trainerType;
-    }
 
     @Override
     public Card createCard(ArrayList arrayList, Player currentPlayer)
     {
         String cardTitle = (String) arrayList.get(0);
-        int idCard = (int) (currentPlayer.getIdForCard());
+        int idCard = currentPlayer.getIdForCard();
         TrainerType trainerType = (TrainerType) arrayList.get(1);
         String description = (String) arrayList.get(2);
-        return   generateCard(cardTitle,idCard,trainerType,description);//;
+        return generateCard(cardTitle, idCard, trainerType, description);//;
     }
 
+    /**
+     * Generate a TrainerCard with the data of createdcard()
+     * @param cardTitle card's title
+     * @param idCard card's id
+     * @param trainerType trainer type
+     * @param description effect of the card
+     * @return a new TrainerCard
+     */
     private TrainerCard generateCard(String cardTitle, int idCard, TrainerType trainerType, String description)
     {
-        return new TrainerCard(cardTitle,idCard,trainerType,description);
+        return new TrainerCard(cardTitle, idCard, trainerType, description);
     }
 
     @Override

@@ -1,7 +1,5 @@
 package upmc.pcg.game.Card;
 
-import upmc.pcg.game.Card.Card;
-
 import java.util.ArrayList;
 
 /**
@@ -9,6 +7,6 @@ import java.util.ArrayList;
  */
 public interface ICard
 {
-    public Card createCard(ArrayList arrayList);
+    Card createCard(ArrayList arrayList);
 
 }

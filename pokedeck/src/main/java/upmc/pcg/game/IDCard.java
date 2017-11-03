@@ -5,8 +5,8 @@ package upmc.pcg.game;
  */
 public class IDCard
 {
-    static int UNIQUE_ID = 0;
-    static int uid = UNIQUE_ID;
+    private static final int UNIQUE_ID = 0;
+    private static int uid = UNIQUE_ID;
 
     public static int getUid()
     {

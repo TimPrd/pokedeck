@@ -8,5 +8,5 @@ import java.util.ArrayList;
  */
 public interface LecturePseudo
 {
-    public ArrayList<String> lirePseudo();
+    ArrayList<String> lirePseudo();
 }
