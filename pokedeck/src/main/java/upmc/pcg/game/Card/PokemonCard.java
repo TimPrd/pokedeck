@@ -93,7 +93,7 @@ public class PokemonCard extends Card
     @Override
     public void updateCardFromCollec(ArrayList alUpdate)
     {
-        
+
         this.cardTitle = (String) alUpdate.get(0);
         this.energyType = (EnergyType) alUpdate.get(1);
         this.attacks = (String[]) alUpdate.get(2);
@@ -103,7 +103,8 @@ public class PokemonCard extends Card
     @Override
     public String toString()
     {
-        String card = "*" + String.format("%-14s", "------------").replace(' ', '-') + "*\n"
+        String card = "  ##### " + this.getID() +" #####" + "\n"
+                + "*" + String.format("%-14s", "------------").replace(' ', '-') + "*\n"
                 + String.format("%-10s", "| " + this.cardTitle + "") +  String.format("%5s", this.hp)  + "|\n"
                 + String.format("%-15s", "| " + this.energyType + "") + "|\n"
                 + String.format("%-15s", "| " + "") + "|\n"

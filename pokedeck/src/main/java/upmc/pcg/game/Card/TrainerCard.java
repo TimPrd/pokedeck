@@ -66,4 +66,20 @@ public class TrainerCard extends Card
         this.trainerType = (TrainerType) alUpdate.get(1);
         this.description = (String) alUpdate.get(2);
     }
+
+    @Override
+    public String toString()
+    {
+        String card = "  ##### " + this.getID() +" #####" + "\n"
+                + "*" + String.format("%-14s", "------------").replace(' ', '-') + "*\n"
+                + String.format("%-15s", "| " + this.cardTitle + "") + "|\n"
+                + String.format("%-15s", "| " + this.trainerType + "") + "|\n"
+                + String.format("%-15s", "| " + "") + "|\n"
+                + String.format("%-15s", "| " + "") + "|\n"
+                + String.format("%-15s", "| " + this.description + "") + "|\n"
+                +  String.format("%-15s", "| " + "") + "|\n"
+                + String.format("%-15s", "| " + "") + "|\n"
+                + "*" + String.format("%-14s", "------------").replace(' ', '-') + "*\n";
+        return card;
+    }
 }

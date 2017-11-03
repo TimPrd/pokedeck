@@ -83,9 +83,16 @@ public class EnergyCard extends Card
     @Override
     public String toString()
     {
-        return "EnergyCard{" +
-                this.cardTitle +
-                "energyType=" + energyType +
-                '}';
+        String card = "  ##### " + this.getID() +" #####" + "\n"
+                + "*" + String.format("%-14s", "------------").replace(' ', '-') + "*\n"
+                + String.format("%-15s", "| " + this.cardTitle + "")  + "|\n"
+                + String.format("%-15s", "| " + "") + "|\n"
+                + String.format("%-15s", "| " + "") + "|\n"
+                + String.format("%-15s", "| " + "") + "|\n"
+                + String.format("%-15s", "| " + this.energyType + "") + "|\n"
+                + String.format("%-15s", "| " + "") + "|\n"
+                + String.format("%-15s", "| " + "") + "|\n"
+                + "*" + String.format("%-14s", "------------").replace(' ', '-') + "*\n";
+        return card;
     }
 }
