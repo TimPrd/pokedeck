@@ -64,7 +64,7 @@ public class Collection
         Card cardToUpdate = this.getCardByID(idCard);
         ArrayList alUpdate = new ArrayList();
         if (cardToUpdate.getClass().getSimpleName().equals("PokemonCard")) alUpdate = GameUI.inputAttributesPkmn();
-        if (cardToUpdate.getClass().getSimpleName().equals("EnergyCard"))  alUpdate = GameUI.inputAttributesEner();
+        if (cardToUpdate.getClass().getSimpleName().equals("EnergyCard")) alUpdate = GameUI.inputAttributesEner();
         if (cardToUpdate.getClass().getSimpleName().equals("TrainerCard")) alUpdate = GameUI.inputAttributesTrain();
         cardToUpdate.updateCardFromCollec(alUpdate);
     }
@@ -125,7 +125,7 @@ public class Collection
         Scanner scan = new Scanner(cardChosenToAddInDeck).useDelimiter("-");
 
         // Printing the tokenized Strings
-        while(scan.hasNext() && this.alCardsDeck.size()<=60)
+        while (scan.hasNext() && this.alCardsDeck.size() <= 60)
         {
             this.addToDeck(scan.nextInt()); //add it to the deck of the player
         }
@@ -143,7 +143,7 @@ public class Collection
 
         if (card != null)
         {
-            card = card.createCard(al,currentPlayer);
+            card = card.createCard(al, currentPlayer);
         }
         this.addToCollec(card);
     }

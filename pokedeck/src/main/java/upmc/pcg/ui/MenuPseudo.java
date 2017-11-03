@@ -26,15 +26,20 @@ public class MenuPseudo
             choice = keyboardChoice.nextLine();
         } while (!isNumber(choice));
 
-        switch (Integer.parseInt(choice)){
-            case 1: return new LectureFichier();
-            case 2: return new LectureConsole();
-            default: return null;
+        switch (Integer.parseInt(choice))
+        {
+            case 1:
+                return new LectureFichier();
+            case 2:
+                return new LectureConsole();
+            default:
+                return null;
         }
     }
 
     /**
      * Check if it's really a number (between 1 and 2)
+     *
      * @param choice the user's input
      * @return if it's a number or not.
      */

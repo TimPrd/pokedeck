@@ -15,23 +15,20 @@
 package upmc.pcg.game;
 
 import upmc.pcg.game.Card.Card;
-import upmc.pcg.game.Card.PokemonCard;
 import upmc.pcg.game.Player.Player;
 import upmc.pcg.ui.GameUI;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Game
 {
+    Player currentPlayer;
+    Player[] arrayPlayers = new Player[2];
     private ArrayList<Collection> allCollections = new ArrayList<>();
     private ArrayList<String> playersName;
     private Collection currentCollection;
     private String choice = "";
-
-    Player currentPlayer;
-    Player[] arrayPlayers = new Player[2];
 
     public Game()
     {
@@ -44,7 +41,7 @@ public class Game
 
         for (int i = 0; i < arrayPlayers.length; i++)
         {
-            arrayPlayers[i] = new Player(i+1, playersName.get(i), new Collection(new ArrayList<>(), new ArrayList<>(), playersName.get(i)));
+            arrayPlayers[i] = new Player(i + 1, playersName.get(i), new Collection(new ArrayList<>(), new ArrayList<>(), playersName.get(i)));
         }
 
         currentPlayer = arrayPlayers[0];
@@ -72,7 +69,7 @@ public class Game
             case "1":
                 int choiceType = GameUI.chooseTypeOfCard();
                 System.out.flush();
-                this.currentCollection.addingCard(choiceType,currentPlayer);
+                this.currentCollection.addingCard(choiceType, currentPlayer);
                 break;
 
             case "2":
@@ -119,8 +116,6 @@ public class Game
 
         }
     }
-
-
 
 
 }
