@@ -1,4 +1,6 @@
-# Pokédeck
+# Pokédeck - Timothé PARDIEU et Valentin HERVOUET
+
+Veuillez vous reférez au fichier PDF exceptionnellement (inclusion d'image oblige)
 
 Jeu de carte Pokédeck dans le cadre du cours Java/UPMC
 
