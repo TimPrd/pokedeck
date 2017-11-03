@@ -93,7 +93,6 @@ public class GameUI
     public static int chooseCardFromCollection(Collection collection)
     {
         System.out.println("Please select the pokemons numbers you want. (beetween 1 and " + collection.getAlCardsCollection().size() + ")");
-        System.out.println("Ex ");
         return keyboardChoice.nextInt();
     }
 
