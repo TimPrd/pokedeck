@@ -11,21 +11,21 @@ First of all I invite You to take a look at the previous commit which contains a
 
 :warning: __Also, please note that the update function isn't actually implemented in the UI version but in the CLI version - it can be seen by searching  the tag "@Pierre T." in Collection.java__ :warning:
 
-I recomend you to use the JAR file in the previous commit to view all the update function.
+I recommend you to use the JAR file in the previous commit to view all the update function.
 
-In fact in this new version the only remain functions which wasn't implemented was :
+In fact in this new version the only remaining functions which wasn't implemented was :
  * The saving function 
  * The loading function 
  * Using Gson dependency
 
-All these functions are implemented. Please, take a look in :
+All these functions are implemented. Please, take a look at :
 - ActionsManager.java
 - Collection.java
 - CollectionTest.java 
 
 (Use CTRL-F - find "//@Pierre T.") :+1:
 
-:heavy_plus_sign: I also invite You to take a look in the Project 2 in order to see how the program can be used and also which functions are implemented
+:heavy_plus_sign: I also invite You to take a look at the Project 2 in order to see how the program can be used and also which functions are implemented
 ____
 
 
@@ -82,15 +82,15 @@ You can find here all the Pokedeck UI.
 	* if the pokemon ennemy is K.O a new one will be draw randomly
 	* if one of the player has no more cards it will print the winner
 8. **Switching** player 
-	* If you want to be your oppent then go to Menu>Joueur>Changer joueur
+	* If you want to be your opponent then go to Menu>Joueur>Changer joueur
 
 
 
 ## What I have learned
 
-First I learn to use a MVC design pattern. The code is splitted by View/Model and Controller. To late but I discovered a pattern named Observable which seems to be a good way of updating data from model/view.
+First I learned to use a MVC design pattern. The code is splitted by View/Model and Controller. Too late, but I discovered a pattern named Observable which seems to be a good way of updating data from model/view.
 
-I used this project to learn more about Java language. So I try to do my best to use new concept like:
+I used this project to learn more about Java language. So I try to do my best to use new concepts like:
 
 - Lambda
 
@@ -98,7 +98,7 @@ Enables to passing method in arg / references
 
 - Annotation
 	 
-I have used annotation to get dynamicaly the action. I've created a @Act which call the right method associated. 
+I have used annotation to get dynamically the action. I've created a @Act which call the right method associated. 
 ```java 
 	@Act("AddPkmn")
     public void createCard(ArrayList al) ...
@@ -116,7 +116,7 @@ I used it to do some query on my List object to create the "find" method
 
 - Using GSON
  
-I discover how to save/load data in JSON format using Google GSON
+I discovered how to save/load data in JSON format using Google GSON
 
 - Using ~API
 
