@@ -1,8 +1,8 @@
 # - Pokedeck | Timothé PARDIEU -
 
 This project is splited into two different projects:
-1. The first part is designed to Pierre T.
-2. Second part is designed to Philippe E.
+1. The first part is designed for Pierre T.
+2. The second part is designed for Philippe E.
 ___
 
 ## Project 1 - Pierre T. (Saving data)
