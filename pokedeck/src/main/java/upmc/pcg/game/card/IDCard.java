@@ -9,12 +9,13 @@
 
 package upmc.pcg.game.card;
 
-/**
- * Enum to retrieve the type of card
- * It's easier to acces with an enum.
- */
-public enum CardType {
-    Pokemon,
-    Trainer,
-    Energy
+
+class IDCard {
+    private static final int UNIQUE_ID = 0;
+    private static int uid = UNIQUE_ID;
+
+    public static int getUid() {
+        return ++uid;
+    }
+
 }

@@ -1,0 +1,71 @@
+[
+  {
+    "energyType": "Darkness",
+    "hp": 50,
+    "attacks": {
+      "attack": 3
+    },
+    "HP": 0,
+    "cardType": "Pokemon",
+    "cardTitle": "Pikachu",
+    "idCard": 0
+  },
+  {
+    "energyType": "Darkness",
+    "hp": 50,
+    "attacks": {
+      "attack": 3
+    },
+    "HP": 0,
+    "cardType": "Pokemon",
+    "cardTitle": "1",
+    "idCard": 0
+  }
+,
+  {
+    "energyType": "Darkness",
+    "hp": 50,
+    "attacks": {
+      "attack": 3
+    },
+    "HP": 0,
+    "cardType": "Pokemon",
+    "cardTitle": "2",
+    "idCard": 0
+  }
+,
+  {
+    "energyType": "Darkness",
+    "hp": 50,
+    "attacks": {
+      "attack": 3
+    },
+    "HP": 0,
+    "cardType": "Pokemon",
+    "cardTitle": "3",
+    "idCard": 0
+  },
+  {
+    "energyType": "Darkness",
+    "hp": 50,
+    "attacks": {
+      "attack": 3
+    },
+    "HP": 0,
+    "cardType": "Pokemon",
+    "cardTitle": "4",
+    "idCard": 0
+  }
+,
+  {
+    "energyType": "Darkness",
+    "hp": 50,
+    "attacks": {
+      "attack": 3
+    },
+    "HP": 0,
+    "cardType": "Pokemon",
+    "cardTitle": "FEJIJEIJI",
+    "idCard": 0
+  }
+]

@@ -1,4 +1,13 @@
-package upmc.pcg.game.Player;
+/*
+ * Copyright (c)
+ *        @author Timothé PARDIEU
+ *                 ${PACKAGE_NAME}
+ *                 Created on - ${DATE} (${TIME})
+ *                 Build for project ${PROJECT_NAME}
+ *
+ */
+
+package upmc.pcg.game.player;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,16 +19,13 @@ import java.util.Scanner;
  * Add all the names in the arraylist by splitting with ";" (+ trim to remove whitespace)
  * Check also if there is at least 2 names
  */
-public class LectureConsole implements LecturePseudo
-{
-    public ArrayList<String> lirePseudo()
-    {
+public class LectureConsole implements LecturePseudo {
+    public ArrayList<String> lirePseudo() {
         ArrayList<String> alPseudos;
         Scanner keyboardChoice = new Scanner(System.in);
-        do
-        {
+        do {
             System.out.println("Entrez les noms ( >= 2 ) des joueurs séparés par ';' :");
-            alPseudos = new ArrayList<String>();
+            alPseudos = new ArrayList<>();
             Collections.addAll(alPseudos, keyboardChoice.nextLine()
                     .trim()
                     .split(";"));

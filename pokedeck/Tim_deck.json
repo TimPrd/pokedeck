@@ -1,0 +1,49 @@
+[
+  {
+    "energyType": "Water",
+    "hp": 100,
+    "attacks": {
+      "Hydrocanon": 50,
+      "Aqua-jet": 25,
+      "Griffe": 5
+    },
+    "HP": 0,
+    "cardType": "Pokemon",
+    "cardTitle": "Tortank",
+    "idCard": 1
+  },
+  {
+    "energyType": "Psychic",
+    "hp": 200,
+    "attacks": {
+      "Psyko": 25,
+      "Aurasphere": 100
+    },
+    "HP": 0,
+    "cardType": "Pokemon",
+    "cardTitle": "Mew",
+    "idCard": 2
+  },
+  {
+    "energyType": "Darkness",
+    "hp": 25,
+    "attacks": {
+      "Bomb\u0027beurk": 15
+    },
+    "HP": 0,
+    "cardType": "Pokemon",
+    "cardTitle": "Smogo",
+    "idCard": 1
+  },
+  {
+    "energyType": "ColorLess",
+    "hp": 50,
+    "attacks": {
+      "Attack": 5
+    },
+    "HP": 0,
+    "cardType": "Pokemon",
+    "cardTitle": "Nom",
+    "idCard": 1
+  }
+]

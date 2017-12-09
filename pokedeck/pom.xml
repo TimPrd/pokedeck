@@ -1,10 +1,19 @@
+<!--
+  ~ Copyright (c)
+  ~        @author Timothé PARDIEU
+  ~                 ${PACKAGE_NAME}
+  ~                 Created on - ${DATE} (${TIME})
+  ~                 Build for project ${PROJECT_NAME}
+  ~
+  -->
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>upmc.pcg</groupId>
   <artifactId>pokedeck</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <packaging>jar</packaging>
 
   <name>pokedeck</name>
@@ -23,5 +32,15 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.6.2</version>
+    </dependency>
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.12</version>
+      </dependency>
   </dependencies>
 </project>

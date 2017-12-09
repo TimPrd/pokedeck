@@ -1,0 +1,13 @@
+[
+  {
+    "energyType": "Darkness",
+    "hp": 50,
+    "attacks": {
+      "attack": 3
+    },
+    "HP": 0,
+    "cardType": "Pokemon",
+    "cardTitle": "Pikachu",
+    "idCard": 0
+  }
+]

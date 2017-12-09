@@ -1,0 +1,40 @@
+[
+  {
+    "energyType": "Lightning",
+    "hp": 100,
+    "evolutionStage": 0,
+    "attacks": {
+      "Ultralaser": 50,
+      "Tornade":40
+    },
+    "HP": 0,
+    "cardType": "Pokemon",
+    "cardTitle": "Rayquaza",
+    "idCard": 1
+  },
+  {
+    "energyType": "Fire",
+    "hp": 50,
+    "evolutionStage": 0,
+    "attacks": {
+      "Flamèche": 10
+    },
+    "HP": 0,
+    "cardType": "Pokemon",
+    "cardTitle": "Caninos",
+    "idCard": 1
+  },
+  {
+    "energyType": "Lightning",
+    "hp": 25,
+    "evolutionStage": 0,
+    "attacks": {
+      "Eclair": 10,
+      "Griffe":5
+    },
+    "HP": 0,
+    "cardType": "Pokemon",
+    "cardTitle": "Pikachu",
+    "idCard": 1
+  }
+]
